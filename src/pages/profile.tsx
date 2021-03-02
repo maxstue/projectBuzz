@@ -1,8 +1,9 @@
 import { Flex } from '@chakra-ui/react'
-import Link from 'next/link'
 
-const AboutPage = () => (
-  <>
+export interface ProfileProps {}
+
+const Profile = ({}: ProfileProps) => {
+  return (
     <Flex
       justifyContent="center"
       alignItems="center"
@@ -10,11 +11,8 @@ const AboutPage = () => (
       flexDirection="column"
     >
       <div>Hello from profile</div>
-      <Link href="/">
-      Go to Home
-      </Link>
     </Flex>
-  </>
-)
+  )
+}
 
-export default AboutPage
+export default Profile
